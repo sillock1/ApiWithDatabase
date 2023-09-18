@@ -23,8 +23,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-var dbContext = app.Services.GetRequiredService<WeatherContext>();
-dbContext.Database.EnsureCreated();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
